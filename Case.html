@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ingrese Un parametro </title>
+</head>
+<body>
+    <script>
+    let numeroDePersonas;
+
+    numeroDePersonas = prompt('Ingrese las victimas ayudadas del dia de hoy', '');
+    document.write(numeroDePersonas);
+    document.write(' No te desanimes.');
+
+    switch (true) {
+        case (numeroDePersonas > 0 && numeroDePersonas <= 1000):
+            document.write(' Sigue adelante')
+            break;
+        case (numeroDePersonas > 1000 && numeroDePersonas <= 10000):
+            document.write(' vas para middle Heroe');
+            break;
+        case (numeroDePersonas > 10000 && numeroDePersonas <= 30000):
+            document.write(' felicidades,Pro Heroe');
+            break;
+        case (numeroDePersonas > 30000 && numeroDePersonas <= 100000):
+            document.write(' porfavor tomese un respiro');
+            break;
+        case (numeroDePersonas > 100000):
+            document.write(' Encarecidamente agradecemos su valor pero porfavor priorize la salud');
+            break;
+        default:
+            document.write(' numero invalido');
+    }
+    </script>
+</body>
+</html>
